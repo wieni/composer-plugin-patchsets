@@ -1,0 +1,31 @@
+{
+  "name": "wieni/composer-plugin-patchsets",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "require": {
+    "composer-plugin-api": "^2.0",
+    "cweagans/composer-patches": "^2.0.0-beta1"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0",
+    "phpunit/phpunit": "^10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wieni\\ComposerPatchSet\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "class": "Wieni\\ComposerPatchSet\\Composer\\Plugin\\PatchSet"
+  },
+  "config": {
+    "allow-plugins": {
+      "cweagans/composer-patches": true
+    }
+  }
+}
