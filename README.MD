@@ -49,7 +49,7 @@ This next example demonstrates the exclusion of the "`#2907810`" patch for `drup
     "patchRepositories": [
       {
         "name": "your-org/drupal-patches",
-        "excludePatches": {
+        "excludedPatches": {
           "drupal/core": [
             "#2907810"
           ],
